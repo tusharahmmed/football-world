@@ -370,7 +370,7 @@ header{
 -------------------- */
 
 
-@media only screen and (min-width:689px) and (max-width:991px) {
+@media only screen and (min-width:689px) and (max-width:1024px) {
     header{
         height: 100%;
     }
@@ -439,21 +439,6 @@ header{
         grid-row-gap: 15px;
     }
 
-
-    /* partner sectio  
-    .partner-container{
-        flex-direction: column;
-        padding-top: 20px;
-    }
-    .partner{
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .partner img{
-        width: 50%;
-        height: auto;
-    }*/
 
     /* footer section  */
     .footer-container{
