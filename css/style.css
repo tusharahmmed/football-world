@@ -1,0 +1,467 @@
+/* --------------------------
+-----------------------------
+Name: Football World | Responsive Template
+Author: Tushar Ahmmed Sakib
+Author URL: https://www.facebook.com/tusharahmmed.sakib
+-----------------------------
+----------------------------- */
+
+/* ------------------
+---------------------
+    Globle CSS
+---------------------
+--------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.btn{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    font-size: 16px;
+}
+.animation {
+    transition: padding 2s;
+}
+.animation:hover{
+    padding: 20px 34px;
+    
+}
+.mr{
+    margin-right: 8px;
+}
+.ml{
+    margin-left: 8px;
+}
+.mt{
+    margin-top: 34px;
+}
+
+/* ------------------
+---------------------
+    Header CSS
+---------------------
+--------------------- */
+header{
+    background-color: #2D25A0;
+    height: 100vh;
+    color: #FFFFFF;
+
+}
+#menu-section{
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0px 123px 49px 156px; */
+    padding: 0% 13%;
+    padding-top: 42px;
+    margin-bottom: 49px;
+    height: 44px;
+}
+
+.menu-container{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-icon{
+    display: none;
+}
+.menu-container li{
+    list-style-type: none;
+    margin-left: 36px;
+}
+.menu-container li a{
+    font-size: 16px;
+}
+
+/* Hero Container */
+.hero-container{
+    display: flex;
+    /* margin: 0px 123px 49px 156px; */
+    padding: 0% 13%;
+}
+.hero-text{
+    width: 60%;
+}
+.hero-text h1{
+    font-size: 64px;
+    font-weight: 700;
+    padding: 0px 36px;
+}
+.hero-text a{
+    margin-left: 36px;
+}
+.hero-thumbnail{
+    width: 40%;
+}
+.hero-thumbnail img{
+    max-width: 438px;
+
+}
+/* ------------------
+---------------------
+    Player Section
+---------------------
+--------------------- */
+.player-section{
+    margin-top: 70px;
+   padding: 0% 9%;
+}
+.players-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player-item{
+    box-sizing: border-box;
+    padding: 15px;
+    width: 330px;
+    box-shadow: 1px 1px 5px 1px rgba(182, 182, 206, 0.301);
+    cursor: pointer;
+}
+
+.player-thumbnail img{
+    width: 300px;
+}
+.player-info h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 16px 0px;
+}
+.player-info p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    line-height: 26px;
+}
+
+/* ------------------------------
+--------------------------------
+    Highlight Section
+-------------------------------
+----------------------------- */
+.highlight-section{
+    display: flex;
+    padding: 135px 5% 100px 5%;
+}
+
+.highlight-content{
+    padding: 3%;
+}
+.highlight-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+}
+.highlight-content p{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+.highlight-thumbnail img{
+    width: 567px;
+}
+
+/* ------------------------------
+--------------------------------
+    Video Section
+-------------------------------
+----------------------------- */
+.videos-section{
+    margin-bottom: 80px;
+}
+.video-wrap{
+    padding: 0px 7%;
+}
+#video-title{
+    font-size: 30px;
+    
+    color: #0A0826;
+    font-weight: 500;
+}
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    
+}
+
+/* ------------------------------
+--------------------------------
+    Media Partner Section
+-------------------------------
+----------------------------- */
+.partner-section{
+    background-color: rgb(213, 215, 215);
+    margin-bottom: 50px;
+}
+.partner-section h5{
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+.partner-container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.partner img{
+    width: 100%;
+}
+
+/* ------------------------------
+--------------------------------
+    Footer Section
+-------------------------------
+----------------------------- */
+.footer-container{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+#footer-logo{
+    width: 100%;
+}
+.link-icon {
+    background-color: #E7E7E8;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 14px;
+}
+.link-icon .fab{
+    font-size: 17px;
+    color: #969BAB;
+}
+.footer-container p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* -----------------------------------
+------------------------------------
+        Mobile Device
+---------------------------------
+------------------------------- */
+@media only screen and (max-width:522px){
+    .hero-text h1{
+        padding: 0px;
+        font-size: 34px;
+    }
+
+    .hero-thumbnail img{
+        width: 300px;
+    }
+
+} 
+
+@media only screen and (max-width:688px) {
+    header{
+        height: 100%;
+    }
+    /* menu nav */
+    .menu-icon{
+        display: block;
+        font-size: 37px;
+    }
+    .menu-container{
+        display: none;
+    }
+    /* hero section  */
+    .hero-container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .hero-text{
+        margin-bottom: 40px;
+    }
+    .hero-text h1{
+        padding: 0px;
+        font-size: 40px;
+    }
+    .hero-text a {
+        margin-left: 0px;
+    }
+    .hero-thumbnail{
+        margin-bottom: 40px;
+    }
+    
+    /* player section */
+    .player-section{
+        padding: 0% 5%;
+    }
+    .players-container{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        grid-row-gap: 25px;
+    }
+    /* heighlight section  */
+    .highlight-section{
+        flex-direction: column;
+        padding: 50px 5% 00px 5%;
+        align-items: center;
+    }
+    .highlight-content{
+        padding-bottom: 40px;
+    }
+    .highlight-content h1{
+        font-size: 44px;
+    }
+    
+    .highlight-thumbnail img{
+        width: 100%;
+    }
+    /* video section  */
+    .videos-section{
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .video-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+    }
+
+
+    /* partner sectio  */
+    .partner-container{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .partner{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .partner img{
+        width: 50%;
+        height: auto;
+    }
+
+    /* footer section  */
+    .footer-container{
+        width: 80%;
+    }
+
+
+
+
+
+}
+
+/* --------------------
+---------------------
+    Tab Screeen
+--------------------
+-------------------- */
+
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+    header{
+        height: 100%;
+    }
+    /* menu nav */
+    .menu-icon{
+        display: block;
+        font-size: 37px;
+    }
+    .menu-container{
+        display: none;
+    }
+    /* hero section  */
+    .hero-container{
+        /* flex-direction: column; */
+        height: 100%;
+    }
+    .hero-text{
+        margin-bottom: 40px;
+    }
+    .hero-text h1{
+        padding: 0px;
+        font-size: 40px;
+    }
+    .hero-text a {
+        margin-left: 0px;
+    }
+    /* .hero-thumbnail{
+        margin-bottom: 40px;
+    } */
+    .hero-thumbnail img{
+        width:100%;
+    }
+    /* player section */
+    .player-section{
+        padding: 0% 5%;
+    }
+    .players-container{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        grid-row-gap: 25px;
+    }
+    /* heighlight section  */
+    .highlight-section{
+        flex-direction: column;
+        padding: 50px 5% 00px 5%;
+        align-items: center;
+    }
+    .highlight-content{
+        padding-bottom: 40px;
+    }
+    .highlight-content h1{
+        font-size: 44px;
+    }
+    
+    .highlight-thumbnail img{
+        width: 100%;
+    }
+    /* video section  */
+    .videos-section{
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .video-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+    }
+
+
+    /* partner sectio  
+    .partner-container{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .partner{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .partner img{
+        width: 50%;
+        height: auto;
+    }*/
+
+    /* footer section  */
+    .footer-container{
+        width: 80%;
+    }
+
+
+
+
+
+}
